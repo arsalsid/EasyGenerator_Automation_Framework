@@ -1,5 +1,3 @@
-
-
 describe('Task HTML', () => {
   it('should display alert with text from file', () => {
     cy.task('readAlertText').then((alertText) => {

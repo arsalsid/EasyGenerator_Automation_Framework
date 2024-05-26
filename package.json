@@ -5,12 +5,21 @@
     "main": "index.js",
     "scripts": {
         "start-server": "http-server -c-1",
-        "cypress": "cypress open",
-        "test": "start-server-and-test start-server http://localhost:8080 cypress"
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "generate-report": "marge cypress/reports/mocha/report.json --reportDir cypress/reports/mocha",
+        "test:ui": "start-server-and-test start-server http://localhost:8080 cypress:open",
+        "test:headless": "start-server-and-test start-server http://localhost:8080 cypress:run"
+
     },
     "devDependencies": {
         "cypress": "^13.10.0",
         "http-server": "^14.1.1",
-        "start-server-and-test": "^1.15.4"
+        "start-server-and-test": "^1.15.4",
+        "mocha": "^10.0.0",
+        "mochawesome": "^7.0.1",
+        "mocha-multi-reporters": "^1.5.1",
+        "mochawesome-merge": "^4.2.0",
+        "mocha-awesome-report-generator": "^6.0.0"
     }
 }

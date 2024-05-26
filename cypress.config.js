@@ -12,15 +12,25 @@ module.exports = defineConfig({
     screenshots : true,
     watchForFileChanges : false,
 
+    env: {
+      alertFilePath: 'alert-text.txt',
+    },
+
     setupNodeEvents(on, config) {
       on('task', {
         readAlertText() {
-          const filePath = path.resolve(__dirname, 'alert-text.txt');
+          const filePath = path.resolve(__dirname, config.env.alertFilePath);
           return fs.readFileSync(filePath, 'utf8');
         },
-      })
-      specPattern: 'cypress/e2e/**/*.spec.js'
-
+      });
     },
+
+    specPattern: 'cypress/e2e/**/*.spec.js',
+    reporter: 'cypress-multi-reporters',
+    reporterOptions: {
+      configFile: 'mocha.json'
+    },
+
+    browser: 'chrome' // Set Chrome as the default browser
   },
 });
