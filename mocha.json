@@ -1,7 +1,7 @@
 {
     "reporterEnabled": "mochawesome",
     "mochaAwesomeReporterOptions": {
-      "reportDir": "test-results/results-json",
+      "reportDir": "cypress/reports/mocha",
       "reportFilename": "Cypress End To End framework",
       "quiet": true,
       "overwrite": false,

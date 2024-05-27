@@ -26,7 +26,7 @@ module.exports = defineConfig({
     },
 
     specPattern: 'cypress/e2e/**/*.spec.js',
-    reporter: 'cypress-multi-reporters',
+   // reporter: 'cypress-multi-reporters',
     reporterOptions: {
       configFile: 'mocha.json'
     },

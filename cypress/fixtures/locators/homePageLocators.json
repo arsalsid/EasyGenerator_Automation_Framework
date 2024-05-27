@@ -1,6 +1,7 @@
 {
   "pageTitle": "title:contains('Practice Page')",
-  "Invoke an alert/confirmation modal": "#name",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "invokeAlertconfirmationmodal": "#name",
+  "clickOnConfirmBtn": "#confirmbtn",
+  "uploadImageBtn": "input[name='img']"
+  
 }

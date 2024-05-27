@@ -8,14 +8,27 @@ describe('Practice Page and title', () => {
   });
 
   it('should display the correct page title', () => {
-    homePage.assertPageTitle('Practice Page');
-
-    
+    homePage.assertPageTitle('Practice Page');  
   });
 
-    it('should display alert with text from file', () => {
-        alertText.readAlertContentFromFile();
-    });
+  it('should display alert with text from file', () => {
+    alertText.readAlertContentFromFile();
+  });
+
+  it('should upload dummy image from system', () => {
+    homePage.clickOnButton();
+  });
+
+  it('should click Confirmation button and verify button existence', () => {
+    homePage.clickOnButton();
+  });
+
+
+
+
+
+
+
   })
   
   
