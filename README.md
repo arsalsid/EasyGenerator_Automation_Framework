@@ -1,4 +1,4 @@
-# Created By Muhammad Arsalana for EasyGenerator_Ent To End Automation_Framework by using Cypress with mocha framework.
+# Created By Muhammad Arsalana for EasyGenerator End To End Automation_Framework by using Cypress with mocha framework.
 
 ## Description:
 
