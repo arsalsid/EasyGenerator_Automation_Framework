@@ -1,13 +1,17 @@
 import actions from "../helper.js/actions"
+import homePageLocators from '../fixtures/locators/homePageLocators.json';
+
 
 class HomePage {
+    
     visit() {
         cy.visit('/task.html');
     }
 
-    getPageTitle() {
-        actions.getTitle();
+    assertPageTitle(pageTitle) {
+        return actions.getTitle(homePageLocators.pageTitle).should('have.text', pageTitle);
     }
 }
 
-export default new HomePage();
+const homePage = new HomePage()
+export default homePage;

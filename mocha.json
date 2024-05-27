@@ -1,11 +1,20 @@
 {
     "reporterEnabled": "mochawesome",
     "mochaAwesomeReporterOptions": {
-      "reportDir": "cypress/reports/mocha",
-      "reportFilename": "reports.json",
+      "reportDir": "test-results/results-json",
+      "reportFilename": "Cypress End To End framework",
       "quiet": true,
       "overwrite": false,
       "html": false,
-      "json": true
+      "json": true,
+      "autoOpen": true,
+      "code": true,
+      "reportPageTitle": "End To End Automation Test",
+      "reportTitle": "Easy Generator Automation Test",
+      "timestamp": "longDate",
+      "showPassed": true,
+      "showFailed": true,
+      "showPending": true,
+      "showSkipped": true
     }
   }

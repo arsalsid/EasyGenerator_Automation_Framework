@@ -1,40 +1,20 @@
-import HomePage from "../pages/homePage";
+// import HomePage from "../pages/homePage";
+import homePage from "../pages/homePage";
+import alertText from "../pages/alertText";
 
-describe('Practice Page', () => {
+describe('Practice Page and title', () => {
   beforeEach(() => {
-    HomePage.visit();
+    homePage.visit();
   });
 
   it('should display the correct page title', () => {
-    HomePage.getPageTitle();
-    TaskPage.getTitle().should('have.text', 'Practice Page');
+    homePage.assertPageTitle('Practice Page');
+
+    
   });
 
     it('should display alert with text from file', () => {
-      cy.task('readAlertText').then((alertText) => {
-        //Injecting a script to show alert
-        cy.visit('/task.html', {
-          onBeforeLoad(win) {
-            win.alert = (msg) => {
-              const alertEvent = new CustomEvent('alert', { detail: msg });
-              win.dispatchEvent(alertEvent);
-            };
-          },
-        });
-  
-        //Adding an event listener to check the alert text
-        cy.window().then((win) => {
-          win.addEventListener('alert', (e) => {
-            expect(e.detail).to.equal(alertText);
-          });
-        });
-  
-        // Triggering the alert
-        cy.window().then((win) => {
-          win.alert(alertText);
-        });
-      });
-     cy.contains('Practice Page');
+        alertText.readAlertContentFromFile();
     });
   })
   
