@@ -15,6 +15,10 @@ describe('Practice Page and title', () => {
     alertText.readAlertContentFromFile();
   });
 
+  it('should handle the dropdwn options', () => {
+    homePage.practicePageDropDown();
+  });
+
   it('should upload dummy image from system', () => {
     homePage.uploadImage();
   });

@@ -2,6 +2,7 @@
     "confirmationModalText": "easyGenerator",
     "expectedMessageModal": "Hello , Are you sure you want to confirm?",
     "image":"dummy.png",
-    "enterShowTextLocator":"Hello from Easygenerator"
+    "enterShowTextLocator":"Hello from Easygenerator",
+    "dropDwonText": "Option2"
   }
   

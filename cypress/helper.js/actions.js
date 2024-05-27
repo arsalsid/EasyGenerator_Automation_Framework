@@ -19,9 +19,13 @@ class Actions {
     uploadFile(locator,filePath) {
         return cy.get(locator).attachFile(filePath, { subjectType: 'input'});
     }
-    
+
      waitForElement(locator){
         cy.waitForElement(locator);
+     }
+
+     dropDownHandling(locator, optionText) {
+        cy.get(locator).select(optionText)
      }
 
 }

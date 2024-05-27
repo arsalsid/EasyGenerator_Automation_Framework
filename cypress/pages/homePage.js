@@ -10,10 +10,13 @@ class HomePage {
         cy.visit('/task.html');
         
     }
-
     assertPageTitle(pageTitle) {
         actions.getTitle(homePageLocators.pageTitle).should('have.text', pageTitle);
         
+    }
+
+    practicePageDropDown() {
+        actions.dropDownHandling(homePageLocators.selectDropdown, homePageTestData.dropDwonText);
     }
 
     uploadImage() {

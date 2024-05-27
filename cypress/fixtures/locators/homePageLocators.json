@@ -6,6 +6,8 @@
   "newTabLocator": "button#opentab",
   "hideButtonLocator":"#hide-textbox",
   "showButtonLocator":"#show-textbox",
-  "displayFieldLocator": "#displayed-text"
+  "displayFieldLocator": "#displayed-text",
+  "selectDropdown": "#dropdown-class-example"
+  
   
 }
