@@ -1,6 +1,7 @@
 {
-    "modalName": "easyGenerator",
+    "confirmationModalText": "easyGenerator",
     "expectedMessageModal": "Hello , Are you sure you want to confirm?",
-    "body": "Fixtures are a great way to mock data for responses to routes"
+    "image":"dummy.png",
+    "enterShowTextLocator":"Hello from Easygenerator"
   }
   

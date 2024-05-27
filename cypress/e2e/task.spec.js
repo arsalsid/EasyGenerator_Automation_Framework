@@ -16,11 +16,19 @@ describe('Practice Page and title', () => {
   });
 
   it('should upload dummy image from system', () => {
-    homePage.clickOnButton();
+    homePage.uploadImage();
   });
 
-  it('should click Confirmation button and verify button existence', () => {
-    homePage.clickOnButton();
+  it('should open new tab to verify', () => {
+    homePage.openNewTab();
+  });
+
+  it('should click Confirmation button', () => {
+    homePage.enterInformation();
+  });
+
+  it('should hide and show input field', () => {
+    homePage.hideAndShowField();
   });
 
 

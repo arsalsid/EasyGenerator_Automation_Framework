@@ -2,6 +2,10 @@
   "pageTitle": "title:contains('Practice Page')",
   "invokeAlertconfirmationmodal": "#name",
   "clickOnConfirmBtn": "#confirmbtn",
-  "uploadImageBtn": "input[name='img']"
+  "uploadImageBtn": ".image-upload-wrapper > input",
+  "newTabLocator": "button#opentab",
+  "hideButtonLocator":"#hide-textbox",
+  "showButtonLocator":"#show-textbox",
+  "displayFieldLocator": "#displayed-text"
   
 }
