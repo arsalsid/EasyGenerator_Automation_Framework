@@ -1,0 +1,3 @@
+<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Sun, 26 May 2024 16:39:01 GMT" time="7.074">
+<testcase classname="Practice Page" name="should display alert with text from file" time="6.961"/>
+</testsuite>

@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-05-26T16:45:51.269Z",
+    "end": "2024-05-26T16:46:00.593Z",
+    "duration": 9324,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "955319fe-80d4-4512-a802-7c8edb9814e8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task.spec.js",
+      "file": "cypress\\e2e\\task.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1aab2da-1e85-414d-a4b7-d401971355c2",
+          "title": "Practice Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display the correct page title",
+              "fullTitle": "Practice Page should display the correct page title",
+              "timedOut": null,
+              "duration": 5372,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "TaskPage.getTitle().should('have.text', 'Practice Page');",
+              "err": {
+                "message": "ReferenceError: TaskPage is not defined",
+                "estack": "ReferenceError: TaskPage is not defined\n    at Context.eval (webpack://easy-generator-automation-framework/./cypress/e2e/task.spec.js:9:4)",
+                "diff": null
+              },
+              "uuid": "a73468c3-b8bb-4bf5-81c4-6f776f009c64",
+              "parentUUID": "f1aab2da-1e85-414d-a4b7-d401971355c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display alert with text from file",
+              "fullTitle": "Practice Page should display alert with text from file",
+              "timedOut": null,
+              "duration": 3719,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('readAlertText').then(alertText => {\n  //Injecting a script to show alert\n  cy.visit('/task.html', {\n    onBeforeLoad(win) {\n      win.alert = msg => {\n        const alertEvent = new CustomEvent('alert', {\n          detail: msg\n        });\n        win.dispatchEvent(alertEvent);\n      };\n    }\n  });\n  //Adding an event listener to check the alert text\n  cy.window().then(win => {\n    win.addEventListener('alert', e => {\n      expect(e.detail).to.equal(alertText);\n    });\n  });\n  // Triggering the alert\n  cy.window().then(win => {\n    win.alert(alertText);\n  });\n});\ncy.contains('Practice Page');",
+              "err": {},
+              "uuid": "cf061fc9-7174-4a48-b538-b374035c250a",
+              "parentUUID": "f1aab2da-1e85-414d-a4b7-d401971355c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf061fc9-7174-4a48-b538-b374035c250a"
+          ],
+          "failures": [
+            "a73468c3-b8bb-4bf5-81c4-6f776f009c64"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9091,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

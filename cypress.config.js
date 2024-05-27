@@ -30,7 +30,6 @@ module.exports = defineConfig({
     reporterOptions: {
       configFile: 'mocha.json'
     },
-
     browser: 'chrome' // Set Chrome as the default browser
   },
 });
