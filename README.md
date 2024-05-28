@@ -46,7 +46,7 @@ After running tests, Mochawesome HTML reports will be generated automatically. Y
 
 **Proof of Testing incase of any test failure.**
 
-![Test Failure Screenshot](cypress/screenshots/task.spec.js/On%20Failure%20Screesnhot.png)
+![Test Failure Screenshot](cypress/images/Screenshot%20on%20Failure%20Execution.png)
 
 
 ## Contributing
