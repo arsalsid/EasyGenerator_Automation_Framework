@@ -36,9 +36,18 @@ This project contains automated tests for **Practice Page for Easy Generator** u
 
 After running tests, Mochawesome HTML reports will be generated automatically. You can find the reports in the **mochawesome-report**  directory.
 
+## Screenshots
+
+**Proof of Testing incase of any test failure.**
+
+![Test Failure Screenshot](cypress/screenshots/task.spec.js/On%20Failure%20Screesnhot.png)
+
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please create a GitHub issue or submit a pull request.
+
+
 
 
 # Thank you!!!

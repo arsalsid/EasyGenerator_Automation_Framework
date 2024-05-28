@@ -10,6 +10,7 @@ module.exports = defineConfig({
     video : true,
     videoCompression : 32,
     screenshots : true,
+    screenshotOnRunFailure: true,
     watchForFileChanges : false,
 
     env: {

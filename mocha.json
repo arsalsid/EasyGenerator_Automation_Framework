@@ -9,6 +9,7 @@
       "json": true,
       "autoOpen": true,
       "code": true,
+      "embeddedScreenshots": true,
       "reportPageTitle": "End To End Automation Test",
       "reportTitle": "Easy Generator Automation Test",
       "timestamp": "longDate",
