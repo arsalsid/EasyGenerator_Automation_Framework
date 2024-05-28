@@ -1,7 +1,7 @@
 {
     "reporterEnabled": "mochawesome",
     "mochaAwesomeReporterOptions": {
-      "reportDir": "cypress/reports/mocha",
+      "reportDir": "cypress/reports/mochawesome",
       "reportFilename": "Cypress End To End framework",
       "quiet": true,
       "overwrite": false,

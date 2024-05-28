@@ -1,0 +1,216 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-28T07:38:44.629Z",
+    "end": "2024-05-28T07:39:07.431Z",
+    "duration": 22802,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8fef0f13-bc61-4e10-9437-fb98850a9f78",
+      "title": "",
+      "fullFile": "cypress\\e2e\\task.spec.js",
+      "file": "cypress\\e2e\\task.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+          "title": "Practice Page and title",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display the correct page title",
+              "fullTitle": "Practice Page and title should display the correct page title",
+              "timedOut": null,
+              "duration": 5115,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.assertPageTitle('Practice Page');",
+              "err": {},
+              "uuid": "9662f35e-7a91-43de-a4a0-31dc9b2e6944",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display alert with text from file",
+              "fullTitle": "Practice Page and title should display alert with text from file",
+              "timedOut": null,
+              "duration": 4050,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_alertText.default.readAlertContentFromFile();",
+              "err": {},
+              "uuid": "2337c514-2a34-471a-abac-983a1daa2ed9",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle the dropdwn options",
+              "fullTitle": "Practice Page and title should handle the dropdwn options",
+              "timedOut": null,
+              "duration": 2232,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.practicePageDropDown();",
+              "err": {},
+              "uuid": "c00fa633-8efb-4e29-b759-7beb77429a7d",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should upload dummy image from system",
+              "fullTitle": "Practice Page and title should upload dummy image from system",
+              "timedOut": null,
+              "duration": 2026,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.uploadImage();",
+              "err": {},
+              "uuid": "e84d3ef4-88d5-4c3a-9549-8568086f0b73",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should open new tab to verify",
+              "fullTitle": "Practice Page and title should open new tab to verify",
+              "timedOut": null,
+              "duration": 2261,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.openNewTab();",
+              "err": {},
+              "uuid": "e8ad6a96-c8eb-4fe0-a458-cbe61b975d82",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should click Confirmation button",
+              "fullTitle": "Practice Page and title should click Confirmation button",
+              "timedOut": null,
+              "duration": 3543,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.enterInformation();",
+              "err": {},
+              "uuid": "288bf024-0354-47a5-ab80-a9f4ee979d09",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should hide and show input field",
+              "fullTitle": "Practice Page and title should hide and show input field",
+              "timedOut": null,
+              "duration": 2990,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.hideAndShowField();",
+              "err": {},
+              "uuid": "2871fb16-537c-4e90-b7e4-03bf2fc82f9f",
+              "parentUUID": "c2022cad-2f5f-465c-bc5e-c97ef3dd405f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9662f35e-7a91-43de-a4a0-31dc9b2e6944",
+            "2337c514-2a34-471a-abac-983a1daa2ed9",
+            "c00fa633-8efb-4e29-b759-7beb77429a7d",
+            "e84d3ef4-88d5-4c3a-9549-8568086f0b73",
+            "e8ad6a96-c8eb-4fe0-a458-cbe61b975d82",
+            "288bf024-0354-47a5-ab80-a9f4ee979d09",
+            "2871fb16-537c-4e90-b7e4-03bf2fc82f9f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22217,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
