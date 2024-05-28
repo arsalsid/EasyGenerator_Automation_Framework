@@ -2,7 +2,7 @@
 
 ## Description:
 
-This project contains automated tests for **Practice Page for Easy Generator** using JavaScript with Cypress and Mocha framework. The tests are designed to run both in UI mode and Headless mode, interacting with the application hosted locally on port 8080. Also, The tests follows Page Object Model Design pattern wihth Mochawsome reporting on headless mode. Moreover, The verison controlling we used for code deployment is GitHub.
+This project contains automated tests for **Practice Page for Easy Generator** using JavaScript with Cypress and Mocha framework. The tests are designed to run both in UI mode and Headless mode, interacting with the application hosted locally on port 8080. Also, The tests follows Page Object Model Design pattern with Mochawsome reporting on headless mode. Moreover, The verison controlling we used for code deployment is GitHub.
 
 
 ## Dependencies:
@@ -36,7 +36,7 @@ This project contains automated tests for **Practice Page for Easy Generator** u
 
 After running tests, Mochawesome HTML reports will be generated automatically. You can find the reports in the **mochawesome-report**  directory.
 
-### Successfull Execution Report Report
+### Successfull Execution Report
 ![Execution Successfull Report](cypress/images/Successfull%20Execution%20Result.png)
 
 ### Failure Execution Report
